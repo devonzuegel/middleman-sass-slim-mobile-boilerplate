@@ -11,8 +11,7 @@ html[lang='en']
     link[rel='stylesheet' type='text/css' media='all' href='assets/css/reset.css']
     link[rel='stylesheet' type='text/css' media='all' href='assets/css/trunk.css']
 
-    script[type='text/javascript']
-      |  if (typeof jQuery == 'undefined') document.write(unescape('%3Cscript src='js/jquery-1.9.js'' + 'type='text/javascript'%3E%3C/script%3E')) 
+    script[src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"]
     script[type='text/javascript' language='javascript' src='js/trunk.js']
 
   body
@@ -23,11 +22,11 @@ html[lang='en']
           li
           li
           li
-        h1 Paper Trail
+        h1 SITE TITLE
       nav.slide
         ul
-          li: a.active[href=''] SEARCH
-          li: a[href='#'] ABOUT
+          li: a.active[href=''] LINK 1
+          li: a[href='#'] LINK 2
 
       .content.slide
         ul.responsive
