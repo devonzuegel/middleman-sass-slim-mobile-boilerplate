@@ -1,0 +1,11 @@
+/* line 3, ../compass/sass/style.sass */
+.shadow {
+  -webkit-box-shadow: black 5px 5px 5px;
+  -moz-box-shadow: black 5px 5px 5px;
+  box-shadow: black 5px 5px 5px;
+}
+
+/* line 6, ../compass/sass/style.sass */
+.red {
+  color: red;
+}

@@ -1,0 +1,76 @@
+doctype html
+html[lang="en"]
+  head
+    title Devon Zuegel
+
+    meta[charset="utf-8"]
+    meta[name="description" content="Devon's personal website"]
+    meta[name="author" content="Devon Marisa Zuegel"]
+    meta[name="HandheldFriendly" content="True"]
+    meta[name="MobileOptimized" content="320"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="apple-mobile-web-app-capable" content="yes"]
+    meta[name="apple-mobile-web-app-status-bar-style" content="black"]
+    meta[http-equiv="cleartype" content="on"]
+
+    script[src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"]
+    script
+      | window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+    script[src="js/mylibs/helper.js"]
+    script
+      |  // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/ MBP.scaleFix(); 
+    script
+      |  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1; g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js"; s.parentNode.insertBefore(g,s)}(document,"script")); 
+    script[type="text/javascript" language="javascript" src="../js/trunk.js"]
+
+    link[rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"]
+    link[rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"]
+    link[rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"]
+
+    link[rel="shortcut icon" href="img/l/apple-touch-icon.png"]
+
+    link[rel="stylesheet" type="text/css" media="all" href="css/reset.css"]
+    link[rel="stylesheet" type="text/css" media="all" href="css/trunk.css"]
+    link[rel="stylesheet" href="../css/style.css"]
+
+    script[src="js/libs/modernizr-custom.js"]
+    script
+      | Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')
+  
+  body
+    .container
+      / Add "slideRight" class to items that move right when viewing Nav Drawer
+      header.slide
+        ul#navToggle.burger.slide
+          li
+          li
+          li
+        h1.red Devon Zuegel
+      nav.slide
+        ul
+          li: a.active[href=""] HOME
+          li: a[href="#"] RESUME
+          li: a[href="#"] THOUGHTS
+
+      .content.slide
+        ul.responsive
+          li.header-section
+            p.placefiller
+              | HEADER
+          li.body-section
+            p.placefiller
+              | BODY
+          li.footer-section
+            p.placefiller
+              | FOOTER
+
+
+    script[src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"]
+    script
+      | window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+    script[src="js/mylibs/helper.js"]
+    script
+      |  // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/ MBP.scaleFix(); 
+    script
+      |  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1; g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js"; s.parentNode.insertBefore(g,s)}(document,"script")); 
+
