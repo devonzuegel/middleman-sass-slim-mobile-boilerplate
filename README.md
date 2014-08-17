@@ -3,7 +3,7 @@ http://html5boilerplate.com
 
 ##Summary:
 
-This is my personal site, built with Middleman and based on a mobile HTML5 boilerplate. You can find this 'mobile first' baseline [here](https://github.com/shichuan/mobile-html5-boilerplate). I extended the boilerplate to also use compass/sass and slim.
+This is the boilerplate for a mobile-friendly site. It was built with Middleman and based on a mobile HTML5 boilerplate, and I extended the boilerplate to also use compass/sass and slim. You can find this 'mobile first' baseline [here](https://github.com/shichuan/mobile-html5-boilerplate).
 
 ##License:
 
