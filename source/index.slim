@@ -1,25 +1,8 @@
-| <!doctype html> 
-html.no-js
-  head
-    meta[charset="utf-8"]
-    title
-    meta[name="description" content=""]
-    meta[name="author" content=""]
-    meta[name="HandheldFriendly" content="True"]
-    meta[name="MobileOptimized" content="320"]
-    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    link[rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"]
-    link[rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"]
-    link[rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"]
-    link[rel="shortcut icon" href="img/l/apple-touch-icon.png"]
-    meta[http-equiv="cleartype" content="on"]
-    link[rel="stylesheet" href="assets/css/style.css"]
-    script[src="js/libs/modernizr-custom.js"]
-    script
-      | Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')
-  body
-    #container
+== content_for :header do
+  p Header content
 
-      #main[role="main"]
-        p Hello, world!
-      footer
+== content_for :body do
+  p Hello, world!
+
+== content_for :footer do
+ p This is the footer

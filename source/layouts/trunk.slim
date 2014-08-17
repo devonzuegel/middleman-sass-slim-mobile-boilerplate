@@ -1,41 +1,42 @@
 doctype html
-html[lang="en"]
+html[lang='en']
   head
     title
       | Trunk-js Plain
-    meta[charset="utf-8"]
-    meta[name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)"]
-    meta[name="apple-mobile-web-app-capable" content="yes"]
-    meta[name="HandheldFriendly" content="True"]
-    meta[name="apple-mobile-web-app-status-bar-style" content="black"]
-    link[rel="stylesheet" type="text/css" media="all" href="assets/css/reset.css"]
-    link[rel="stylesheet" type="text/css" media="all" href="assets/css/trunk.css"]
-    script[type="text/javascript"]
-      |  if (typeof jQuery == 'undefined') document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + "type='text/javascript'%3E%3C/script%3E")) 
-    script[type="text/javascript" language="javascript" src="js/trunk.js"]
+    meta[charset='utf-8']
+    meta[name='viewport' content='initial-scale=1.0,user-scalable=no,maximum-scale=1' media='(device-height: 568px)']
+    meta[name='apple-mobile-web-app-capable' content='yes']
+    meta[name='HandheldFriendly' content='True']
+    meta[name='apple-mobile-web-app-status-bar-style' content='black']
+    link[rel='stylesheet' type='text/css' media='all' href='assets/css/reset.css']
+    link[rel='stylesheet' type='text/css' media='all' href='assets/css/trunk.css']
+
+    script[type='text/javascript']
+      |  if (typeof jQuery == 'undefined') document.write(unescape('%3Cscript src='js/jquery-1.9.js'' + 'type='text/javascript'%3E%3C/script%3E')) 
+    script[type='text/javascript' language='javascript' src='js/trunk.js']
+
   body
     .container
-      / Add "slideRight" class to items that move right when viewing Nav Drawer
+      / Add 'slideRight' class to items that move right when viewing Nav Drawer
       header.slide
         ul#navToggle.burger.slide
           li
           li
           li
-        h1 Site Title
+        h1 Paper Trail
       nav.slide
         ul
-          li: a.active[href=""] LINK 1
-          li: a[href="#"] LINK 2
-          li: a[href="#"] LINK 3
+          li: a.active[href=''] SEARCH
+          li: a[href='#'] ABOUT
 
       .content.slide
         ul.responsive
           li.header-section
             p.placefiller
-              | HEADER
+              == yield_content :header
           li.body-section
             p.placefiller
-              == yield
+              == yield_content :body
           li.footer-section
             p.placefiller
-              | FOOTER
+              == yield_content :footer
